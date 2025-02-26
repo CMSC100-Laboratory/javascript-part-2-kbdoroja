@@ -17,7 +17,7 @@ const addAccount = (Array) => {
         if(Array[0] != 0 && Array[1] != 0){
             if(validator.isEmail(Array[2])){
                 if(Array[3] >= 18){
-                    appendFileSync("user.txt", Array[0]+","+Array[1]+","+Array[2]+","+Array[3]+","+generateUID(Array[0], Array[1]), "utf-8")
+                    appendFileSync("user.txt", Array[0]+","+Array[1]+","+Array[2]+","+Array[3]+","+generateUID(Array[0], Array[1])+"\n", "utf-8")
                     
                     return true; 
                 }
